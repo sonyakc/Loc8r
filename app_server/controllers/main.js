@@ -3,6 +3,10 @@
  * GET home page.
  */
 
-exports.index = function(request, response){
-  response.render('index', { title: 'Express' });
+exports.about = function(request, response) {
+  response.render('generic-text', { title: 'About' });
+};
+
+exports.signin = function(request, response) {
+	response.render('signin-index', { title: 'Sign in to Loc8r' });
 };
