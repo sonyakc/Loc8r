@@ -7,5 +7,4 @@ block content
             h1= title
   .row
     .col-md-6-col-sm-12
-        p 
-            | Loc8r was created to help people find places to sit down and a bit of work done.
+        p !{(content).replace(/\n/g, '<br/>')}
