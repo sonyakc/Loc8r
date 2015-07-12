@@ -38,7 +38,20 @@ exports.locationInfo = function(request, response) {
   		rating: 3,
   		address: '125 High Street, Reading, RG6 1PS',
   		facilities: ['Hot drinks', 'Food', 'Premium wifi'],
-  		hours: ['Monday - Friday : 7.00am - 7.00pm', 'Saturday : 8.00am - 5.00pm', 'Sunday : closed'],
+  		openingTimes: [{                                              
+		    days: 'Monday - Friday',                                    
+		    opening: '7:00am',                                          
+		    closing: '7:00pm',                                          
+		    closed: false                                               
+		  },{                                                           
+		    days: 'Saturday',                                           
+		    opening: '8:00am',                                          
+		    closing: '5:00pm',                                          
+		    closed: false                                               
+		  },{                                                           
+		    days: 'Sunday',                                             
+		    closed: true                                                
+		  }],  
   		coords: {lat: '51.455041', lng: '-0.9690884'},
   		reviews: [
   			{
